@@ -33,5 +33,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             to: channelID,
             message: "I would rather at the lord with my prayers"
         });
+    } else if (message.toLowerCase().indexOf("pastor jeff") >= 0) {
+        bot.sendMessage({
+            to: channelID,
+            message: "Hello"
+        });
     }
 });
